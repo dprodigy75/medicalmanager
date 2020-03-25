@@ -17,7 +17,7 @@ class Contrato(Document):
 
 	def before_save(self):
 		self.validate_dates()
-		frappe.throw("Valid From Date must be lesser than Valid Upto Date.")
+		frappe.throw("Vjkhjkhjkjk")
 	# def validate_item(self):
 	# 	if not frappe.db.exists("Item", self.item_code):
 	# 		frappe.throw(_("Item {0} not found").format(self.item_code))
@@ -25,6 +25,6 @@ class Contrato(Document):
 	def validate_dates(self):
 		if self.fecha_inicial and self.fecha_final:
 			if self.fecha_inicial > self.fecha_final:
-				frappe.throw("Valid From Date must be lesser than Valid Upto Date.")
+				frappe.throw("Vjkhjkhjkjk")
 
 
