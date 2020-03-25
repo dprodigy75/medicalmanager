@@ -16,11 +16,10 @@ class Contrato(Document):
 		# self.validate_item()
 
 	def before_save(self):
-		self.validate_dates()
-		frappe.throw("La fecha inicial debe ser menor a la fecha final del contrato")
-	# def validate_item(self):
-	# 	if not frappe.db.exists("Item", self.item_code):
-	# 		frappe.throw(_("Item {0} not found").format(self.item_code))
+		#	self.validate_dates()
+		# def validate_item(self):
+		# 	if not frappe.db.exists("Item", self.item_code):
+		# 		frappe.throw(_("Item {0} not found").format(self.item_code))
 
 	def validate_dates(self):
 		if self.fecha_inicial and self.fecha_final:
